@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: '18'
 
+      - run: npm cache clean --force
 
       - run: npm install --frozen-lockfile
       - run: npm run build
