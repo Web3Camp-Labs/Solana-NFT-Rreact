@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Container} from 'react-bootstrap';
 import GithubImg from "./assets/github.png";
-import TwitterImg from "./assets/twitter.png";
+import TwitterImg from "./assets/Twitter.png";
 
 
 const Footer = styled.div`
@@ -37,7 +37,7 @@ export default function footerBox(){
                 </a>
 
                 <div>
-                    <a href="https://github.com/Web3Camp-Labs/signator" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/Web3Camp-Labs/Solana-NFT-Rreact" target="_blank" rel="noreferrer">
                         <img src={GithubImg} alt=""/>
                     </a>
                     <a href="https://twitter.com/Web3Camp" target="_blank" rel="noreferrer">
