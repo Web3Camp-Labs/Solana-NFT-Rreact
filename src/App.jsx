@@ -22,6 +22,10 @@ const Box = styled.div`
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    .flexline{
+        display: flex;
+        align-items: center;
+    }
 `
 
 const Header = styled(Container)`
@@ -104,7 +108,7 @@ function App() {
                                       <div>create Solana NFT</div>
                                   </TitleBox>
                               </Lft>
-                              <div>
+                              <div className="flexline">
                                   <Select
                                       defaultValue={network}
                                       value={network}
