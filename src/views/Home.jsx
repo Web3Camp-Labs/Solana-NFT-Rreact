@@ -11,6 +11,7 @@ import styled from "styled-components";
 
 import {Card,Button } from "react-bootstrap";
 import {nftStorageUploader} from "../utils/nftStorageUploader.js";
+import Loading from "../loading.jsx";
 
 const { TextArea } = Input;
 
@@ -277,6 +278,10 @@ export default function Home({cluster}) {
 
     return (
         <FlexBox>
+            {
+                loading &&       <Loading />
+            }
+
             <Steps
                 current={step}
                 status={step >= 0 ? stepStatus[step] : "process"}
